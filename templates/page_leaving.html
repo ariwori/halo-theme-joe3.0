@@ -134,7 +134,7 @@
         </div>
       </article>
     </div>
-    <th:block th:if="${theme.config.other.enable_clean_mode != true} and ${theme.config.post.enable_comment}">
+    <th:block th:if="${theme.config.other.enable_clean_mode != true} and ${theme.config.post.enable_comment} and ${singlePage.spec.allowComment}">
       <div class="joe_comment">
         <th:block th:if="${#annotations.getOrDefault(singlePage, 'enable_comment', 'true') != 'true'}">
           <div class="joe_comment__close">
